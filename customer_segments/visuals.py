@@ -40,7 +40,7 @@ def pca_results(good_data, pca):
 	components.plot(ax = ax, kind = 'bar');
 	ax.set_ylabel("Feature Weights")
 	ax.set_xticklabels(dimensions, rotation=0)
-
+	#ax.legend(loc='best')
 
 	# Display the explained variance ratios
 	for i, ev in enumerate(pca.explained_variance_ratio_):
